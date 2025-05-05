@@ -47,7 +47,7 @@ function App() {
   
       <h2>Color Box</h2>
       <button onClick={handleClickChangeColor}>Change Color</button>
-      <div style={{ width: 100, height: 100 }}>Color Box</div>
+      <div style={{ width: 100, height: 100, backgroundColor: color }}>Color Box</div>
     </div>
   );
 }
