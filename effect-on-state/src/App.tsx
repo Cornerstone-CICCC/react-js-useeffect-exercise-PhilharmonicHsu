@@ -10,6 +10,7 @@ function App() {
 
   useEffect(()=> {
     console.log(message)
+    setMessage('');
   }, [message])
 
 
@@ -18,7 +19,10 @@ function App() {
   }
 
   useEffect(() => {
-    console.log(like)
+    if (like !== 0) {
+      alert(`Likes updated to ${like}!`)
+      console.log(like)
+    }
   }, [like])
 
   const handleClickeLike = () => {
